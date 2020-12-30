@@ -1,23 +1,18 @@
-syntax enable
+syntax on
 
-set termguicolors
-set mouse=a
-set guicursor=
+set laststatus=1
 set number
+set list lcs=tab:»\ ,trail:␣,extends:▶,precedes:◀
+" eol:¬
 
+let g:python_recommended_style=0
 set ts=2 sw=2 sts=2 et
-filetype plugin indent on
+set autoindent
 autocmd BufNew,BufRead * setlocal formatoptions-=cro
 
 set encoding=utf-8
 set ffs=unix
 
-command! -nargs=0 Copy %y+
-command! -nargs=0 Run !./%:r < in
-command! -nargs=0 Build w | make %:r
-
-call plug#begin()
-Plug 'vim-airline/vim-airline'
-call plug#end()
-
-autocmd VimLeave * guicursor=
+" command -nargs=0 Copy %y+
+" command -nargs=0 Run !%:p:r
+" command -nargs=0 Build w | make %:p:r
