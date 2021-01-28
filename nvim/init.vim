@@ -1,19 +1,24 @@
 call plug#begin()
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'overcache/NeoSolarized'
 call plug#end()
 
 syntax on
 
 set termguicolors
 
-let g:tokyonight_style = 'night'
-let g:tokyonight_enable_italic = 0
-let g:tokyonight_transparent_background = 1
-colorscheme tokyonight
+" let g:tokyonight_style = 'night'
+" let g:tokyonight_enable_italic = 0
+" colorscheme tokyonight
+
+set background=dark
+colorscheme NeoSolarized
 
 set laststatus=2
-set number
+set number rnu
+set cursorline cc=80
 set list lcs=tab:»\ ,trail:␣,extends:▶,precedes:◀
 " eol:¬
 
