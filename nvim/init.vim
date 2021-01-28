@@ -18,7 +18,7 @@ colorscheme NeoSolarized
 
 set laststatus=2
 set number rnu
-set cursorline cc=80
+set cc=80
 set list lcs=tab:»\ ,trail:␣,extends:▶,precedes:◀
 " eol:¬
 
