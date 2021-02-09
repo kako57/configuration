@@ -13,13 +13,13 @@ set termguicolors
 " let g:tokyonight_enable_italic = 0
 " colorscheme tokyonight
 
-set background=dark
+set background=light
 colorscheme NeoSolarized
 
 set laststatus=2
 set number rnu
 set cc=80
-set list lcs=tab:»\ ,trail:␣,extends:▶,precedes:◀
+" set list lcs=tab:»\ ,trail:␣,extends:▶,precedes:◀
 " eol:¬
 
 " let g:python_recommended_style=0
