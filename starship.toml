@@ -1,7 +1,23 @@
 add_newline = false
+format = """${custom.env}\\[$username$hostname $directory\\]\\$ """
 
-[line_break]
-disabled = true
+[hostname]
+ssh_only = false
+show_always = true
+# format = "@pikachu"
+format = "@$hostname"
 
-[git_branch]
-symbol = ""
+[username]
+ssh_only = false
+show_always = true
+format = "$user"
+
+[directory]
+truncation_length = 1
+style = ""
+format = "$path"
+
+[custom.env]
+command = "basename $VIRTUAL_ENV"
+when = "if [[ -z $VIRTUAL_ENV ]]; then return 1; else return 0; fi"
+format = "\\($output\\) "
