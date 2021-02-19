@@ -4,7 +4,6 @@ format = """${custom.env}\\[$username$hostname $directory\\]${custom.char}"""
 [hostname]
 ssh_only = false
 show_always = true
-# format = "@pikachu"
 format = "@$hostname"
 
 [username]
