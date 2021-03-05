@@ -1,4 +1,17 @@
+call plug#begin()
+" Plug 'chriskempson/base16-vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
 syntax on
+
+set ttimeoutlen=0
+
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
 
 set laststatus=0
 set ruler
