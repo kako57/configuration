@@ -201,4 +201,4 @@ export LC_ALL=en_US.utf8
 export LANG=en_US.utf8
 export LANGUAGE=en_US.utf8
 
-eval "$(starship init zsh)"
+eval `starship init zsh`
