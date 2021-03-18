@@ -4,17 +4,17 @@ format = """${custom.env}\\[$username$hostname $directory\\]${custom.char}"""
 [hostname]
 ssh_only = false
 show_always = true
-format = "@$hostname"
+format = "@[$hostname](bold cyan)"
 
 [username]
 ssh_only = false
 show_always = true
-format = "$user"
+format = "[$user](bold cyan)"
 
 [directory]
 truncation_length = 1
 style = ""
-format = "$path"
+format = "[$path](green)"
 
 [custom.env]
 command = "basename $VIRTUAL_ENV"
