@@ -1,7 +1,7 @@
 call plug#begin()
-Plug 'ayu-theme/ayu-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 syntax on
@@ -9,10 +9,10 @@ syntax on
 set ttimeoutlen=0
 
 set termguicolors
-let ayucolor="dark"
-colorscheme ayu
+" let ayucolor="dark"
+" colorscheme ayu
 
-set laststatus=0
+" set laststatus=0
 set ruler
 
 set number norelativenumber
