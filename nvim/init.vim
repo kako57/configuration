@@ -1,30 +1,39 @@
-" call plug#begin()
-" " Plug 'ayu-theme/ayu-vim'
-" " Plug 'vim-airline/vim-airline'
-" " Plug 'vim-airline/vim-airline-themes'
-" call plug#end()
+call plug#begin()
+" bruh, the flight stewardess is getting suspicious
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-syntax on
+" of course, you'll stop stalking tomorrow, right? yeah right
+Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim'}
 
-set ttimeoutlen=0
+" know all languages to increase your chances of getting good information
+Plug 'sheerun/vim-polyglot'
 
-set termguicolors
-" let ayucolor="dark"
-" colorscheme ayu
+" figure out indentation like the stalker you are
+Plug 'tpope/vim-sleuth'
 
-" set laststatus=0
-set ruler
+" when your third leg is smarter than your head
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-set number norelativenumber
-set colorcolumn=80
+" to stalk on people from downtown
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
-set ts=2 sw=2 sts=2 et
-set autoindent
-autocmd BufNew,BufRead * setlocal formatoptions-=cro
+" you gotta keep track of the places you went; at least the last place you noob
+Plug 'farmergreg/vim-lastplace'
+call plug#end()
 
-set encoding=utf-8
-set ffs=unix
+let mapleader = " "
 
-command -nargs=0 Copy %y+
-command -nargs=0 Run !%:p:r < in
-command -nargs=0 Build w | make %:p:r
+syntax enable
+colo Tomorrow-Night-Bright
+hi Normal guibg=NONE ctermbg=NONE
+
+" Uncomment line below to avoid autoinserting comment prefix
+" autocmd BufNew,BufRead * setlocal formatoptions-=cro
+
+" user-defined command to copy whole buffer
+command -nargs=0 C %y+
+" command -nargs=0 Run !%:p:r < in
+" command -nargs=0 Build w | make %:p:r
