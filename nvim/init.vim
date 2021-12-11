@@ -1,39 +1,64 @@
 call plug#begin()
-" bruh, the flight stewardess is getting suspicious
+Plug 'chriskempson/base16-vim'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" of course, you'll stop stalking tomorrow, right? yeah right
-Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim'}
+Plug 'sbdchd/neoformat'
 
-" know all languages to increase your chances of getting good information
-Plug 'sheerun/vim-polyglot'
-
-" figure out indentation like the stalker you are
 Plug 'tpope/vim-sleuth'
 
-" when your third leg is smarter than your head
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 
-" to stalk on people from downtown
-Plug 'nvim-lua/popup.nvim'
+" Plug 'github/copilot.vim'
+
+" Git stuff
+Plug 'tpope/vim-fugitive'
+Plug 'APZelos/blamer.nvim'
+
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+
+" coq +snippets
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-
-" you gotta keep track of the places you went; at least the last place you noob
-Plug 'farmergreg/vim-lastplace'
 call plug#end()
+
+set termguicolors
+set guicursor=
+set mouse=a
+
+filetype plugin indent on
+
+syntax on
+set autoindent
+set number
+set tabstop=8
+set softtabstop=2
+set shiftwidth=2
+set hlsearch
+set ruler
+
+" set background=dark
+colo base16-tomorrow-night
+let g:airline_powerline_fonts = 1
 
 let mapleader = " "
 
-syntax enable
-colo Tomorrow-Night-Bright
-hi Normal guibg=NONE ctermbg=NONE
+" autostart COQ
+let g:coq_settings = { 'auto_start': 'shut-up' }
 
-" Uncomment line below to avoid autoinserting comment prefix
-" autocmd BufNew,BufRead * setlocal formatoptions-=cro
+" remaps for telescope
+nnoremap <leader><leader> <cmd>Telescope find_files<cr>
+nnoremap <leader>/ <cmd>Telescope live_grep<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
+nnoremap <leader>h <cmd>Telescope help_tags<cr>
 
-" user-defined command to copy whole buffer
-command -nargs=0 C %y+
-" command -nargs=0 Run !%:p:r < in
-" command -nargs=0 Build w | make %:p:r
+" disable comment prefix from being added to the new line
+autocmd FileType * set fo-=cro
+
+" enable certain files to be formatted on save
+autocmd BufWritePre *.js,*.ts,*.c,*.cc,*.cpp,*.rs Neoformat
