@@ -1,30 +1,34 @@
 call plug#begin()
+" colorscheme
 Plug 'chriskempson/base16-vim'
 
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+" file explorer
+Plug 'kyazdani42/nvim-tree.lua'
+
+" statusline
 Plug 'nvim-lualine/lualine.nvim'
 
+" formatting
 Plug 'sbdchd/neoformat'
 
+" indentation detection
 Plug 'tpope/vim-sleuth'
 
-" Plug 'sheerun/vim-polyglot'
+" parsing
 Plug 'nvim-treesitter/nvim-treesitter'
 
-" Plug 'github/copilot.vim'
-
-" Git stuff
+" git 
 Plug 'tpope/vim-fugitive'
 Plug 'APZelos/blamer.nvim'
 
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" language server protocol
 Plug 'neovim/nvim-lspconfig'
 
-" coq +snippets
+" completion and snippets
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
+" fuzzy finding
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
@@ -44,9 +48,12 @@ set shiftwidth=2
 set hlsearch
 set ruler
 set signcolumn=number
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
 
 set background=dark
-" colo peachpuff
 colo base16-tomorrow-night
 
 let mapleader = " "
