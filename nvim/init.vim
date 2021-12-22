@@ -1,14 +1,16 @@
 call plug#begin()
 Plug 'chriskempson/base16-vim'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'sbdchd/neoformat'
 
 Plug 'tpope/vim-sleuth'
 
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 " Plug 'github/copilot.vim'
 
@@ -41,10 +43,11 @@ set softtabstop=2
 set shiftwidth=2
 set hlsearch
 set ruler
+set signcolumn=number
 
-" set background=dark
+set background=dark
+" colo peachpuff
 colo base16-tomorrow-night
-let g:airline_powerline_fonts = 1
 
 let mapleader = " "
 
