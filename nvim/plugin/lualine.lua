@@ -34,6 +34,22 @@ local colors = {
   red      = '#cc6666',
 }
 
+if (vim.g.colors_name == 'base16-tomorrow') then
+  colors = {
+    bg       = '#ffffff',
+    fg       = '#4d4d4c',
+    yellow   = '#eab700',
+    cyan     = '#3e999f',
+    darkblue = '#4271ae',
+    green    = '#718c00',
+    orange   = '#de935f',
+    violet   = '#8959a8',
+    magenta  = '#8959a8',
+    blue     = '#4271ae',
+    red      = '#c82829',
+  }
+end
+
 local conditions = {
   buffer_not_empty = function()
     return vim.fn.empty(vim.fn.expand '%:t') ~= 1
@@ -187,7 +203,7 @@ ins_left {
     return msg
   end,
   icon = ' LSP:',
-  color = { fg = '#ffffff', gui = 'bold' },
+  -- color = { fg = '#ffffff', gui = 'bold' },
 }
 
 -- Add components to right sections

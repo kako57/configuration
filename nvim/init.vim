@@ -31,6 +31,9 @@ Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 " fuzzy finding
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" LaTeX
+Plug 'lervag/vimtex'
 call plug#end()
 
 set termguicolors
@@ -43,8 +46,9 @@ syntax on
 set autoindent
 set number
 set tabstop=8
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=8
+set shiftwidth=8
+set noexpandtab
 set hlsearch
 set ruler
 set signcolumn=number
@@ -53,8 +57,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
-set background=dark
-colo base16-tomorrow-night
+colorscheme base16-tomorrow-night
+" colorscheme base16-tomorrow
 
 let mapleader = " "
 
@@ -68,7 +72,7 @@ nnoremap <leader>b <cmd>Telescope buffers<cr>
 nnoremap <leader>h <cmd>Telescope help_tags<cr>
 
 " disable comment prefix from being added to the new line
-autocmd FileType * set fo-=cro
+" autocmd FileType * set fo-=cro
 
 " enable certain files to be formatted on save
 autocmd BufWritePre *.js,*.ts,*.c,*.cc,*.cpp,*.rs Neoformat
