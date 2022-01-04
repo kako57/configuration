@@ -56,8 +56,9 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+set nowrap
 
-colorscheme base16-tomorrow-night
+colorscheme base16-gruvbox-dark-hard
 " colorscheme base16-tomorrow
 
 let mapleader = " "

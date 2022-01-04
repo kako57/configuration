@@ -36,7 +36,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'clangd', 'rust_analyzer', 'tsserver', 'texlab' }
+local servers = { 'clangd', 'rust_analyzer', 'svelte', 'tsserver', 'texlab', 'tailwindcss' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup(
     coq.lsp_ensure_capabilities({
@@ -44,7 +44,33 @@ for _, lsp in ipairs(servers) do
       flags = {
         debounce_text_changes = 150,
       },
-      filetypes = lsp == 'texlab' and {"tex", "bib", "latex"} or filetypes
+      filetypes = lsp == 'texlab' and {"tex", "bib", "latex"} or filetypes,
+      settings = {
+        ["rust-analyzer"] = {
+          checkOnSave = {
+            command = "clippy"
+          },
+        }
+      }
     })
   )
 end
+
+nvim_lsp.sqls.setup(
+  coq.lsp_ensure_capabilities({
+    on_attach = on_attach,
+    flags = {
+      debounce_text_changes = 150,
+    },
+    settings = {
+      sqls = {
+        connections = {
+          {
+            driver = 'postgresql',
+            dataSourceName = 'postgres://dre@localhost/diesel_demo'
+          }
+        }
+      }
+    }
+  })
+)

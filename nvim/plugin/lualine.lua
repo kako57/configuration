@@ -1,54 +1,21 @@
--- Eviline config for lualine
--- Author: shadmansaleh
--- Credit: glepnir
+-- Eviline config for lualine with base-16 colors
+-- Author: kako57
+-- Credit: shadmansaleh & glepnir
 local lualine = require 'lualine'
 
--- Color table for highlights
--- stylua: ignore
--- local colors = {
---   bg       = '#202328',
---   fg       = '#bbc2cf',
---   yellow   = '#ECBE7B',
---   cyan     = '#008080',
---   darkblue = '#081633',
---   green    = '#98be65',
---   orange   = '#FF8800',
---   violet   = '#a9a1e1',
---   magenta  = '#c678dd',
---   blue     = '#51afef',
---   red      = '#ec5f67',
--- }
-
--- Color table to keep it close to tomorrow night theme
 local colors = {
-  bg       = '#1d1f21',
-  fg       = '#c5c8c6',
-  yellow   = '#f0c674',
-  cyan     = '#8abeb7',
-  darkblue = '#81a2be',
-  green    = '#b5bd68',
-  orange   = '#de935f',
-  violet   = '#b294bb',
-  magenta  = '#b294bb',
-  blue     = '#81a2be',
-  red      = '#cc6666',
+  bg       = vim.g.terminal_color_0;
+  fg       = vim.g.terminal_color_7;
+  yellow   = vim.g.terminal_color_3;
+  cyan     = vim.g.terminal_color_6;
+  darkblue = vim.g.terminal_color_4;
+  green    = vim.g.terminal_color_2;
+  orange   = vim.g.terminal_color_3; -- use yellow for orange; works well for me, at least
+  violet   = vim.g.terminal_color_5;
+  magenta  = vim.g.terminal_color_5;
+  blue     = vim.g.terminal_color_4;
+  red      = vim.g.terminal_color_1;
 }
-
-if (vim.g.colors_name == 'base16-tomorrow') then
-  colors = {
-    bg       = '#ffffff',
-    fg       = '#4d4d4c',
-    yellow   = '#eab700',
-    cyan     = '#3e999f',
-    darkblue = '#4271ae',
-    green    = '#718c00',
-    orange   = '#de935f',
-    violet   = '#8959a8',
-    magenta  = '#8959a8',
-    blue     = '#4271ae',
-    red      = '#c82829',
-  }
-end
 
 local conditions = {
   buffer_not_empty = function()
