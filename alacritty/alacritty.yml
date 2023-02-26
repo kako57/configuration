@@ -13,3 +13,1047 @@ font:
   bold italic:
     family: envypn
     style: Medium
+
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '#1a1b26'
+      foreground: '#a9b1d6'
+
+    cursor:
+      background: '#a9b1d6'
+      foreground: CellBackground
+
+    # Normal colors
+    normal:
+      black:   '#32344a'
+      red:     '#f7768e'
+      green:   '#9ece6a'
+      yellow:  '#e0af68'
+      blue:    '#7aa2f7'
+      magenta: '#ad8ee6'
+      cyan:    '#449dab'
+      white:   '#787c99'
+
+    # Bright colors
+    bright:
+      black:   '#444b6a'
+      red:     '#ff7a93'
+      green:   '#b9f27c'
+      yellow:  '#ff9e64'
+      blue:    '#7da6ff'
+      magenta: '#bb9af7'
+      cyan:    '#0db9d7'
+      white:   '#acb0d0'
+
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '#24283b'
+      foreground: '#a9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '#32344a'
+      red:     '#f7768e'
+      green:   '#9ece6a'
+      yellow:  '#e0af68'
+      blue:    '#7aa2f7'
+      magenta: '#ad8ee6'
+      cyan:    '#449dab'
+      white:   '#9699a8'
+
+    # Bright colors
+    bright:
+      black:   '#444b6a'
+      red:     '#ff7a93'
+      green:   '#b9f27c'
+      yellow:  '#ff9e64'
+      blue:    '#7da6ff'
+      magenta: '#bb9af7'
+      cyan:    '#0db9d7'
+      white:   '#acb0d0'
+
+  # Colors (Gruvbox dark)
+  gruvbox-dark: &gruvbox-dark
+    # Default colors
+    primary:
+      # hard   contrast: background = '#1d2021'
+      # Regular contrast: background = '#282828'
+      # soft   contrast: background = '#32302f'
+      background: '#1d2021'
+      # soft contrast: background = '#32302f'
+      foreground: '#ebdbb2'
+
+    # Normal colors
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+
+    # Bright colors
+    bright:
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+
+  # Colors (Gruvbox light)
+  gruvbox-light: &gruvbox-light
+    # Default colors
+    primary:
+      # soft   contrast: background = '#f2e5bc'
+      # Regular contrast: background = '#fbf1c7'
+      # hard   contrast: background = '#f9f5d7'
+      background: '#f9f5d7'
+      foreground: '#3c3836'
+
+    # Normal colors
+    normal:
+      black:   '#fbf1c7'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#7c6f64'
+
+    # Bright colors
+    bright:
+      black:   '#928374'
+      red:     '#9d0006'
+      green:   '#79740e'
+      yellow:  '#b57614'
+      blue:    '#076678'
+      magenta: '#8f3f71'
+      cyan:    '#427b58'
+      white:   '#3c3836'
+
+  crt-gray: &crt-gray
+    primary:
+      background: "#111111"
+      foreground: "#bbbbbb"
+
+    selection:
+      background: "#252525"
+      foreground: CellForeground
+
+    cursor:
+      background: "#111111"
+      foreground: "#bbbbbb"
+
+    normal:
+      black: "#bbbbbb"
+      blue: "#b0b0b0"
+      cyan: "#828282"
+      green: "#999999"
+      magenta: "#a4a4a4"
+      red: "#8e8e8e"
+      white: "#6c6c6c"
+      yellow: "#777777"
+
+    bright:
+      black: "#bbbbbb"
+      blue: "#b0b0b0"
+      cyan: "#828282"
+      green: "#999999"
+      magenta: "#a4a4a4"
+      red: "#8e8e8e"
+      white: "#6c6c6c"
+      yellow: "#777777"
+
+  # Base16 Solarized Dark 256 - alacritty color coNerd Fontig
+  # Ethan Schoonover (modified by aramisgithub)
+  solarized-dark: &solarized-dark
+    # Default colors
+    primary:
+      background: '#002b36'
+      foreground: '#93a1a1'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#002b36'
+      cursor: '#93a1a1'
+
+    # Normal colors
+    normal:
+      black:   '#002b36'
+      red:     '#dc322f'
+      green:   '#859900'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#6c71c4'
+      cyan:    '#2aa198'
+      white:   '#93a1a1'
+
+    # Bright colors
+    bright:
+      black:   '#657b83'
+      red:     '#dc322f'
+      green:   '#859900'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#6c71c4'
+      cyan:    '#2aa198'
+      white:   '#fdf6e3'
+
+    indexed_colors:
+      - { index: 16, color: '#cb4b16' }
+      - { index: 17, color: '#d33682' }
+      - { index: 18, color: '#073642' }
+      - { index: 19, color: '#586e75' }
+      - { index: 20, color: '#839496' }
+      - { index: 21, color: '#eee8d5' }
+
+  # Base16 Solarized Light 256 - alacritty color coNerd Fontig
+  # Ethan Schoonover (modified by aramisgithub)
+  solarized-light: &solarized-light
+    # Default colors
+    primary:
+      background: '#fdf6e3'
+      foreground: '#586e75'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#fdf6e3'
+      cursor: '#586e75'
+
+    # Normal colors
+    normal:
+      black:   '#fdf6e3'
+      red:     '#dc322f'
+      green:   '#859900'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#6c71c4'
+      cyan:    '#2aa198'
+      white:   '#586e75'
+
+    # Bright colors
+    bright:
+      black:   '#839496'
+      red:     '#dc322f'
+      green:   '#859900'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#6c71c4'
+      cyan:    '#2aa198'
+      white:   '#002b36'
+
+    indexed_colors:
+      - { index: 16, color: '#cb4b16' }
+      - { index: 17, color: '#d33682' }
+      - { index: 18, color: '#eee8d5' }
+      - { index: 19, color: '#93a1a1' }
+      - { index: 20, color: '#657b83' }
+      - { index: 21, color: '#073642' }
+
+  # Base16 Grayscale Dark 256 - alacritty color coNerd Fontig
+  # Alexandre Gavioli (https://github.com/Alexx2/)
+  grayscale-dark: &grayscale-dark
+    primary:
+      background: '#101010'
+      foreground: '#b9b9b9'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#101010'
+      cursor: '#b9b9b9'
+
+    # Normal colors
+    normal:
+      black:   '#101010'
+      red:     '#7c7c7c'
+      green:   '#8e8e8e'
+      yellow:  '#a0a0a0'
+      blue:    '#686868'
+      magenta: '#747474'
+      cyan:    '#868686'
+      white:   '#b9b9b9'
+
+    # Bright colors
+    bright:
+      black:   '#525252'
+      red:     '#7c7c7c'
+      green:   '#8e8e8e'
+      yellow:  '#a0a0a0'
+      blue:    '#686868'
+      magenta: '#747474'
+      cyan:    '#868686'
+      white:   '#f7f7f7'
+
+    indexed_colors:
+      - { index: 16, color: '#999999' }
+      - { index: 17, color: '#5e5e5e' }
+      - { index: 18, color: '#252525' }
+      - { index: 19, color: '#464646' }
+      - { index: 20, color: '#ababab' }
+      - { index: 21, color: '#e3e3e3' }
+
+  # Base16 Grayscale Light 256 - alacritty color coNerd Fontig
+  # Alexandre Gavioli (https://github.com/Alexx2/)
+  grayscale-light: &grayscale-light
+    # Default colors
+    primary:
+      background: '#f7f7f7'
+      foreground: '#464646'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#f7f7f7'
+      cursor: '#464646'
+
+    # Normal colors
+    normal:
+      black:   '#f7f7f7'
+      red:     '#7c7c7c'
+      green:   '#8e8e8e'
+      yellow:  '#a0a0a0'
+      blue:    '#686868'
+      magenta: '#747474'
+      cyan:    '#868686'
+      white:   '#464646'
+
+    # Bright colors
+    bright:
+      black:   '#ababab'
+      red:     '#7c7c7c'
+      green:   '#8e8e8e'
+      yellow:  '#a0a0a0'
+      blue:    '#686868'
+      magenta: '#747474'
+      cyan:    '#868686'
+      white:   '#101010'
+
+    indexed_colors:
+      - { index: 16, color: '#999999' }
+      - { index: 17, color: '#5e5e5e' }
+      - { index: 18, color: '#e3e3e3' }
+      - { index: 19, color: '#b9b9b9' }
+      - { index: 20, color: '#525252' }
+      - { index: 21, color: '#252525' }
+
+  # Monokai Pro
+  monokai-pro: &monokai-pro
+    # Default colors
+    primary:
+      background: '#2D2A2E'
+      foreground: '#FCFCFA'
+
+    # Normal colors
+    normal:
+      black:   '#403E41'
+      red:     '#FF6188'
+      green:   '#A9DC76'
+      yellow:  '#FFD866'
+      blue:    '#FC9867'
+      magenta: '#AB9DF2'
+      cyan:    '#78DCE8'
+      white:   '#FCFCFA'
+
+    # Bright colors
+    bright:
+      black:   '#727072'
+      red:     '#FF6188'
+      green:   '#A9DC76'
+      yellow:  '#FFD866'
+      blue:    '#FC9867'
+      magenta: '#AB9DF2'
+      cyan:    '#78DCE8'
+      white:   '#FCFCFA'
+
+  high-contrast: &high-contrast
+    primary:
+      background: "#000000"
+      foreground: "#FFFFFF"
+    selection:
+      background: "#808080"
+    cursor:
+      background: "#FFFFFF"
+
+    normal:
+      black: "#000000"
+      blue: "#0000EE"
+      cyan: "#00CDCD"
+      green: "#00CD00"
+      purple: "#881798"
+      red: "#CD0000"
+      white: "#E5E5E5"
+      yellow: "#CDCD00"
+
+    bright:
+      black: "#7F7F7F"
+      blue: "#5C5CFF"
+      cyan: "#00FFFF"
+      green: "#00FF00"
+      purple: "#B4009E"
+      red: "#FF0000"
+      white: "#FFFFFF"
+      yellow: "#FFFF00"
+
+  night-owl: &night-owl
+    primary:
+      background: "#011627"
+      foreground: "#d6deeb"
+
+    # Cursor colors
+    cursor:
+      text: CellBackground
+      cursor: CellForeground
+
+    # Vi mode cursor colors
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: "#22da6e"
+
+    # Selection colors
+    selection:
+      text: "#ffffff"
+      background: "#0d486e"
+
+    # Search colors
+    search:
+      matches:
+        foreground: "#000000"
+        background: "#22da6e"
+
+        focused_match:
+          foreground: "#ffffff"
+          background: "#22da6e"
+
+      bar:
+        foreground: "#ffffff"
+        background: "#1d3b53"
+
+    # Normal colors
+    normal:
+      black: "#011627"
+      red: "#EF5350"
+      green: "#22da6e"
+      yellow: "#c5e478"
+      blue: "#82AAFF"
+      magenta: "#C792EA"
+      cyan: "#21c7a8"
+      white: "#ffffff"
+
+    # Bright colors
+    bright:
+      black: "#575656"
+      red: "#EF5350"
+      green: "#22da6e"
+      yellow: "#ffeb95"
+      blue: "#82AAFF"
+      magenta: "#C792EA"
+      cyan: "#7fdbca"
+      white: "#ffffff"
+
+  night-owl-light: &night-owl-light
+    primary:
+      background: "#F6F6F6"
+      foreground: "#403f53"
+
+    # Cursor colors
+    cursor:
+      text: CellBackground
+      cursor: "#90A7B2"
+
+    # Vi mode cursor colors
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: "#08916a"
+
+    # Selection colors
+    selection:
+      text: "#000000"
+      background: "#E0E0E0"
+
+    # Search colors
+    search:
+      matches:
+        foreground: "#F6F6F6"
+        background: "#08916a"
+
+        focused_match:
+          foreground: "#000000"
+          background: "#08916a"
+
+      bar:
+        foreground: "#403f53"
+        background: "#E0E0E0"
+
+    # Normal colors
+    normal:
+      black: "#403f53"
+      red: "#de3d3b"
+      green: "#08916a"
+      yellow: "#daaa01"
+      blue: "#288ed7"
+      magenta: "#d6438a"
+      cyan: "#2AA298"
+      white: "#F0F0F0"
+
+    # Bright colors
+    bright:
+      black: "#403f53"
+      red: "#de3d3b"
+      green: "#08916a"
+      yellow: "#daaa01"
+      blue: "#288ed7"
+      magenta: "#d6438a"
+      cyan: "#2AA298"
+      white: "#F0F0F0"
+
+  dracula: &dracula
+    primary:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+    cursor:
+      text: CellBackground
+      cursor: CellForeground
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: CellForeground
+    search:
+      matches:
+        foreground: '#44475a'
+        background: '#50fa7b'
+      focused_match:
+        foreground: '#44475a'
+        background: '#ffb86c'
+      bar:
+        background: '#282a36'
+        foreground: '#f8f8f2'
+    line_indicator:
+      foreground: None
+      background: None
+    selection:
+      text: CellForeground
+      background: '#44475a'
+    normal:
+      black:   '#000000'
+      red:     '#ff5555'
+      green:   '#50fa7b'
+      yellow:  '#f1fa8c'
+      blue:    '#bd93f9'
+      magenta: '#ff79c6'
+      cyan:    '#8be9fd'
+      white:   '#bfbfbf'
+    bright:
+      black:   '#4d4d4d'
+      red:     '#ff6e67'
+      green:   '#5af78e'
+      yellow:  '#f4f99d'
+      blue:    '#caa9fa'
+      magenta: '#ff92d0'
+      cyan:    '#9aedfe'
+      white:   '#e6e6e6'
+    dim:
+      black:   '#14151b'
+      red:     '#ff2222'
+      green:   '#1ef956'
+      yellow:  '#ebf85b'
+      blue:    '#4d5b86'
+      magenta: '#ff46b0'
+      cyan:    '#59dffc'
+      white:   '#e6e6d1'
+
+  # Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+  # Copyright (c) 2017-present Sven Greb <code@svengreb.de>
+
+  # Project:    Nord Alacritty
+  # Version:    0.1.0
+  # Repository: https://github.com/arcticicestudio/nord-alacritty
+  # License:    MIT
+  # References:
+  #   https://github.com/alacritty/alacritty
+
+  nord: &nord
+    primary:
+      background: '#2e3440'
+      foreground: '#d8dee9'
+      dim_foreground: '#a5abb6'
+    cursor:
+      text: '#2e3440'
+      cursor: '#d8dee9'
+    vi_mode_cursor:
+      text: '#2e3440'
+      cursor: '#d8dee9'
+    selection:
+      text: CellForeground
+      background: '#4c566a'
+    search:
+      matches:
+        foreground: CellBackground
+        background: '#88c0d0'
+      bar:
+        background: '#434c5e'
+        foreground: '#d8dee9'
+    normal:
+      black: '#3b4252'
+      red: '#bf616a'
+      green: '#a3be8c'
+      yellow: '#ebcb8b'
+      blue: '#81a1c1'
+      magenta: '#b48ead'
+      cyan: '#88c0d0'
+      white: '#e5e9f0'
+    bright:
+      black: '#4c566a'
+      red: '#bf616a'
+      green: '#a3be8c'
+      yellow: '#ebcb8b'
+      blue: '#81a1c1'
+      magenta: '#b48ead'
+      cyan: '#8fbcbb'
+      white: '#eceff4'
+    dim:
+      black: '#373e4d'
+      red: '#94545d'
+      green: '#809575'
+      yellow: '#b29e75'
+      blue: '#68809a'
+      magenta: '#8c738c'
+      cyan: '#6d96a5'
+      white: '#aeb3bb'
+
+  # Colors (Tomorrow Night Bright)
+  tomorrow-night-bright: &tomorrow-night-bright 
+    # Default colors
+    primary:
+      background: '#000000'
+      foreground: '#eaeaea'
+
+    # Normal colors
+    normal:
+      black:   '#000000'
+      red:     '#d54e53'
+      green:   '#b9ca4a'
+      yellow:  '#e6c547'
+      blue:    '#7aa6da'
+      magenta: '#c397d8'
+      cyan:    '#70c0ba'
+      white:   '#666666'
+
+    # Bright colors
+    bright:
+      black:   '#424242'
+      red:     '#ff3334'
+      green:   '#9ec400'
+      yellow:  '#e7c547'
+      blue:    '#7aa6da'
+      magenta: '#b77ee0'
+      cyan:    '#54ced6'
+      white:   '#eaeaea'
+
+  # Base16 OneDark 256 - alacritty color config
+  # Lalit Magant (http://github.com/tilal6991)
+  one-dark: &one-dark
+    # Default colors
+    primary:
+      background: '#282c34'
+      foreground: '#abb2bf'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#282c34'
+      cursor: '#abb2bf'
+
+    # Normal colors
+    normal:
+      black:   '#282c34'
+      red:     '#e06c75'
+      green:   '#98c379'
+      yellow:  '#e5c07b'
+      blue:    '#61afef'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#abb2bf'
+
+    # Bright colors
+    bright:
+      black:   '#545862'
+      red:     '#e06c75'
+      green:   '#98c379'
+      yellow:  '#e5c07b'
+      blue:    '#61afef'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#c8ccd4'
+
+    indexed_colors:
+      - { index: 16, color: '#d19a66' }
+      - { index: 17, color: '#be5046' }
+      - { index: 18, color: '#353b45' }
+      - { index: 19, color: '#3e4451' }
+      - { index: 20, color: '#565c64' }
+      - { index: 21, color: '#b6bdca' }
+
+  # Base16 Green Screen 256 - alacritty color config
+  # Chris Kempson (http://chriskempson.com)
+  green-screen: &green-screen
+    # Default colors
+    primary:
+      background: '#001100'
+      foreground: '#00bb00'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#001100'
+      cursor: '#00bb00'
+
+    # Normal colors
+    normal:
+      black:   '#001100'
+      red:     '#007700'
+      green:   '#00bb00'
+      yellow:  '#007700'
+      blue:    '#009900'
+      magenta: '#00bb00'
+      cyan:    '#005500'
+      white:   '#00bb00'
+
+    # Bright colors
+    bright:
+      black:   '#007700'
+      red:     '#007700'
+      green:   '#00bb00'
+      yellow:  '#007700'
+      blue:    '#009900'
+      magenta: '#00bb00'
+      cyan:    '#005500'
+      white:   '#00ff00'
+
+    indexed_colors:
+      - { index: 16, color: '#009900' }
+      - { index: 17, color: '#005500' }
+      - { index: 18, color: '#003300' }
+      - { index: 19, color: '#005500' }
+      - { index: 20, color: '#009900' }
+      - { index: 21, color: '#00dd00' }
+
+  wee: &wee
+    # Default colors
+    primary:
+      background: '#282828'
+      foreground: '#eeeeee'
+
+    selection:
+      background: '#555555'
+      foreground: CellForeground
+
+    cursor:
+      foreground: CellForeground
+      background: '#8c8c8c'
+
+    # Normal colors
+    normal:
+      black:   '#000000'
+      red:     '#82413E'
+      green:   '#588D4C'
+      yellow:  '#8f953d'
+      blue:    '#675dc7'
+      magenta: '#ab77ac'
+      cyan:    '#4795a8'
+      white:   '#555555'
+
+    # Bright colors
+    bright:
+      black:   '#777777'
+      red:     '#82413E'
+      green:   '#588D4C'
+      yellow:  '#8f953d'
+      blue:    '#675dc7'
+      magenta: '#ab77ac'
+      cyan:    '#4795a8'
+      white:   '#eeeeee'
+
+
+      red:     '#D20F39' # red
+      green:   '#40A02B' # green
+      yellow:  '#DF8E1D' # yellow
+      blue:    '#1E66F5' # blue
+      magenta: '#EA76CB' # pink
+      cyan:    '#179299' # teal
+      white:   '#BCC0CC' # surface1
+
+    # Dim colors
+    dim:
+      black:   '#5C5F77' # subtext1
+      red:     '#D20F39' # red
+      green:   '#40A02B' # green
+      yellow:  '#DF8E1D' # yellow
+      blue:    '#1E66F5' # blue
+      magenta: '#EA76CB' # pink
+      cyan:    '#179299' # teal
+      white:   '#ACB0BE' # surface2
+
+    indexed_colors:
+      - { index: 16, color: '#FE640B' }
+      - { index: 17, color: '#DC8A78' }
+
+
+
+  frappe: &frappe
+
+    # Default colors
+    primary:
+      background: '#303446' # base
+      foreground: '#C6D0F5' # text
+      # Bright and dim foreground colors
+      dim_foreground: '#C6D0F5' # text
+      bright_foreground: '#C6D0F5' # text
+
+    # Cursor colors
+    cursor:
+      text: '#303446' # base
+      cursor: '#F2D5CF' # rosewater
+    vi_mode_cursor:
+      text: '#303446' # base
+      cursor: '#BABBF1' # lavender
+
+    # Search colors
+    search:
+      matches:
+        foreground: '#303446' # base
+        background: '#A5ADCE' # subtext0
+      focused_match:
+        foreground: '#303446' # base
+        background: '#A6D189' # green
+      footer_bar:
+        foreground: '#303446' # base
+        background: '#A5ADCE' # subtext0
+
+    # Keyboard regex hints
+    hints:
+      start:
+        foreground: '#303446' # base
+        background: '#E5C890' # yellow
+      end:
+        foreground: '#303446' # base
+        background: '#A5ADCE' # subtext0
+
+    # Selection colors
+    selection:
+      text: '#303446' # base
+      background: '#F2D5CF' # rosewater
+
+    # Normal colors
+    normal:
+      black:   '#51576D' # surface1
+      red:     '#E78284' # red
+      green:   '#A6D189' # green
+      yellow:  '#E5C890' # yellow
+      blue:    '#8CAAEE' # blue
+      magenta: '#F4B8E4' # pink
+      cyan:    '#81C8BE' # teal
+      white:   '#B5BFE2' # subtext1
+
+    # Bright colors
+    bright:
+      black:   '#626880' # surface2
+      red:     '#E78284' # red
+      green:   '#A6D189' # green
+      yellow:  '#E5C890' # yellow
+      blue:    '#8CAAEE' # blue
+      magenta: '#F4B8E4' # pink
+      cyan:    '#81C8BE' # teal
+      white:   '#A5ADCE' # subtext0
+
+    # Dim colors
+    dim:
+      black:   '#51576D' # surface1
+      red:     '#E78284' # red
+      green:   '#A6D189' # green
+      yellow:  '#E5C890' # yellow
+      blue:    '#8CAAEE' # blue
+      magenta: '#F4B8E4' # pink
+      cyan:    '#81C8BE' # teal
+      white:   '#B5BFE2' # subtext1
+
+    indexed_colors:
+      - { index: 16, color: '#EF9F76' }
+      - { index: 17, color: '#F2D5CF' }
+
+
+
+  macchiato: &macchiato
+
+    # Default colors
+    primary:
+      background: '#24273A' # base
+      foreground: '#CAD3F5' # text
+      # Bright and dim foreground colors
+      dim_foreground: '#CAD3F5' # text
+      bright_foreground: '#CAD3F5' # text
+
+    # Cursor colors
+    cursor:
+      text: '#24273A' # base
+      cursor: '#F4DBD6' # rosewater
+    vi_mode_cursor:
+      text: '#24273A' # base
+      cursor: '#B7BDF8' # lavender
+
+    # Search colors
+    search:
+      matches:
+        foreground: '#24273A' # base
+        background: '#A5ADCB' # subtext0
+      focused_match:
+        foreground: '#24273A' # base
+        background: '#A6DA95' # green
+      footer_bar:
+        foreground: '#24273A' # base
+        background: '#A5ADCB' # subtext0
+
+    # Keyboard regex hints
+    hints:
+      start:
+        foreground: '#24273A' # base
+        background: '#EED49F' # yellow
+      end:
+        foreground: '#24273A' # base
+        background: '#A5ADCB' # subtext0
+
+    # Selection colors
+    selection:
+      text: '#24273A' # base
+      background: '#F4DBD6' # rosewater
+
+    # Normal colors
+    normal:
+      black:   '#494D64' # surface1
+      red:     '#ED8796' # red
+      green:   '#A6DA95' # green
+      yellow:  '#EED49F' # yellow
+      blue:    '#8AADF4' # blue
+      magenta: '#F5BDE6' # pink
+      cyan:    '#8BD5CA' # teal
+      white:   '#B8C0E0' # subtext1
+
+    # Bright colors
+    bright:
+      black:   '#5B6078' # surface2
+      red:     '#ED8796' # red
+      green:   '#A6DA95' # green
+      yellow:  '#EED49F' # yellow
+      blue:    '#8AADF4' # blue
+      magenta: '#F5BDE6' # pink
+      cyan:    '#8BD5CA' # teal
+      white:   '#A5ADCB' # subtext0
+
+    # Dim colors
+    dim:
+      black:   '#494D64' # surface1
+      red:     '#ED8796' # red
+      green:   '#A6DA95' # green
+      yellow:  '#EED49F' # yellow
+      blue:    '#8AADF4' # blue
+      magenta: '#F5BDE6' # pink
+      cyan:    '#8BD5CA' # teal
+      white:   '#B8C0E0' # subtext1
+
+    indexed_colors:
+      - { index: 16, color: '#F5A97F' }
+      - { index: 17, color: '#F4DBD6' }
+
+
+
+  mocha: &mocha
+
+    # Default colors
+    primary:
+      background: '#1E1E2E' # base
+      foreground: '#CDD6F4' # text
+      # Bright and dim foreground colors
+      dim_foreground: '#CDD6F4' # text
+      bright_foreground: '#CDD6F4' # text
+
+    # Cursor colors
+    cursor:
+      text: '#1E1E2E' # base
+      cursor: '#F5E0DC' # rosewater
+    vi_mode_cursor:
+      text: '#1E1E2E' # base
+      cursor: '#B4BEFE' # lavender
+
+    # Search colors
+    search:
+      matches:
+        foreground: '#1E1E2E' # base
+        background: '#A6ADC8' # subtext0
+      focused_match:
+        foreground: '#1E1E2E' # base
+        background: '#A6E3A1' # green
+      footer_bar:
+        foreground: '#1E1E2E' # base
+        background: '#A6ADC8' # subtext0
+
+    # Keyboard regex hints
+    hints:
+      start:
+        foreground: '#1E1E2E' # base
+        background: '#F9E2AF' # yellow
+      end:
+        foreground: '#1E1E2E' # base
+        background: '#A6ADC8' # subtext0
+
+    # Selection colors
+    selection:
+      text: '#1E1E2E' # base
+      background: '#F5E0DC' # rosewater
+
+    # Normal colors
+    normal:
+      black:   '#45475A' # surface1
+      red:     '#F38BA8' # red
+      green:   '#A6E3A1' # green
+      yellow:  '#F9E2AF' # yellow
+      blue:    '#89B4FA' # blue
+      magenta: '#F5C2E7' # pink
+      cyan:    '#94E2D5' # teal
+      white:   '#BAC2DE' # subtext1
+
+    # Bright colors
+    bright:
+      black:   '#585B70' # surface2
+      red:     '#F38BA8' # red
+      green:   '#A6E3A1' # green
+      yellow:  '#F9E2AF' # yellow
+      blue:    '#89B4FA' # blue
+      magenta: '#F5C2E7' # pink
+      cyan:    '#94E2D5' # teal
+      white:   '#A6ADC8' # subtext0
+
+    # Dim colors
+    dim:
+      black:   '#45475A' # surface1
+      red:     '#F38BA8' # red
+      green:   '#A6E3A1' # green
+      yellow:  '#F9E2AF' # yellow
+      blue:    '#89B4FA' # blue
+      magenta: '#F5C2E7' # pink
+      cyan:    '#94E2D5' # teal
+      white:   '#BAC2DE' # subtext1
+
+    indexed_colors:
+      - { index: 16, color: '#FAB387' }
+      - { index: 17, color: '#F5E0DC' }
+
+colors: *grayscale-light
+
+draw_bold_text_with_bright_colors: false
